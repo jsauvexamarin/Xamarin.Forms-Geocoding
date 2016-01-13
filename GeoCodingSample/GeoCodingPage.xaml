@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GeoCodingSample.GeoCodingPage" xmlns:local="GeoCodingSample">
+	<ContentPage.Content>
+		<ContentView Padding="20">
+			<StackLayout VerticalOptions="Center">
+				<Entry Text="{Binding Address, Mode=TwoWay}" />
+				<Button Text="Go!" Command="{Binding GeoCodeCommand}" />
+				<Label Text="Latitude:" HorizontalTextAlignment="Center" />
+				<Label Text="{Binding Position.Latitude}" HorizontalTextAlignment="Center" />
+				<Label Text="Longitude" HorizontalTextAlignment="Center" />
+				<Label Text="{Binding Position.Longitude}" HorizontalTextAlignment="Center" />
+			</StackLayout>
+		</ContentView>
+	</ContentPage.Content>
+</ContentPage>
